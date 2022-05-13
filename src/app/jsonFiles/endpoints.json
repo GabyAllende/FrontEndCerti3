@@ -1,0 +1,9 @@
+{
+    "serverName": "http://localhost:5800",
+    "endpoints": {
+        "getDocuments": "/getDocuments",
+        "getDocumentsType": "/getDocumentsType/PF",
+        "downloadDocument": "/downloadDocument",
+        "updateViewCount": "/updateViewCount"
+    }
+}
