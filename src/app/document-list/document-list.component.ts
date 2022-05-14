@@ -93,4 +93,7 @@ export class DocumentListComponent implements OnInit {
     window.open('/'+page);
     
   }
+  getDate(fullDate:Date){
+    
+  }
 }

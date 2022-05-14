@@ -22,14 +22,15 @@ export class PdfViewerComponent implements AfterViewInit {
       myres2= JSON.parse(res2);
       console.log('myres :>> ', myres);
       console.log('myres :>> ', myres2);
+      console.log('file link :>> ', "http://localhost/"+String(myres.docPath)+"/"+String(myres2.docName));
     }
     else{
       console.log("era null");
     }
     WebViewer({
       path: '../assets/lib',
-      //initialDoc: "http://localhost/"+String(myres.docPath)+"/"+String(myres2.docName)
-      initialDoc: "http://localhost:8080/PublicFiles/Ejemplo.pdf"
+      initialDoc: "http://localhost:8080/"+String(myres.docPath)+"/"+String(myres2.docName)
+      //initialDoc: "http://localhost:8080/PublicFiles/Ejemplo.pdf"
     }, this.viewerRef.nativeElement).then(instance => {
 
     });
